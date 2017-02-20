@@ -12,6 +12,9 @@ group :production do
     gem 'rails_12factor'
 end
 
+#add bootstrap
+gem 'bootstrap-sass', '~> 3.3.1'
+
 gem 'sass-rails', '4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
