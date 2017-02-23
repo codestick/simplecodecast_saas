@@ -4,15 +4,13 @@ class ContactsController < ApplicationController
     end
     
     def create
-        @contact = Contact.new(contact_params)
-        
-        if @contact.save
-            flash[:success] = "Message sent."
-            redirect_to new_contact_path
-        else
+            name = params[:contact][:name]
+            email = params[:contact][:email]
+            body = params[:contact][:comments]
+            #refer to contact_mailer.rb in mailers folder
+            ContactMailer.contact_email(name, email, body).deliver
             flash[:danger] = "Error occured. Message has not been sent."
             redirect_to new_contact_path
-        end
     end
     
     private
