@@ -12,6 +12,9 @@ group :production do
     gem 'rails_12factor'
 end
 
+#add devise gem
+gem 'devise'
+
 #add bootstrap
 gem 'bootstrap-sass', '~> 3.3.1'
 
