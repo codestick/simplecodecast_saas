@@ -18,7 +18,7 @@ gem 'devise'
 #add stripe gem
 gem 'stripe', '~> 1.16.1'
 
-#add figaro gem
+#to hide secret keys
 gem 'figaro', '~> 1.0.0'
 
 #add bootstrap
