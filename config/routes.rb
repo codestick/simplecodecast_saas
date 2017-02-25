@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'users/registrations' }
   resources :contacts
   
-  resource :users do
+  resources :users do
     resource :profile
   end
   
